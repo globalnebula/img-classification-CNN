@@ -6,8 +6,8 @@ from keras.preprocessing.image import ImageDataGenerator
 from sklearn.model_selection import train_test_split
 
 # Define the paths for your dataset (separate folders for 'junk' and 'healthy' food images)
-train_path = "/path/to/training_data"
-test_path = "/path/to/test_data"
+train_path = "C:\\Users\\kunal\\Desktop\\My Projects\\Image Classifier using CNN\\trainingData"
+test_path = "C:\\Users\\kunal\\Desktop\\My Projects\\Image Classifier using CNN\\test_images"
 
 # Image dimensions and batch size
 img_width, img_height = 150, 150
