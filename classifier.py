@@ -21,7 +21,6 @@ def predict_image(image_path):
     else:
         return "Healthy Food"
 
-# Example usage
 image_path_to_predict = "C:\\Users\\kunal\\Desktop\\My Projects\\Image Classifier using CNN\\test.jpg"
 prediction_result = predict_image(image_path_to_predict)
 print(f"The predicted class for the given image is: {prediction_result}")
