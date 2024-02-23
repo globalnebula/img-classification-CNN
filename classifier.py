@@ -2,7 +2,7 @@ import tensorflow as tf
 from keras.preprocessing import image
 import numpy as np
 
-# Load the trained model
+# Loading the trained model
 model = tf.keras.models.load_model("food_classifier_model.h5")
 
 # Function to preprocess an image before feeding it to the model
