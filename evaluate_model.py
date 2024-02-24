@@ -1,5 +1,5 @@
 import numpy as np
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, mean_squared_error
 from keras.models import load_model
 
 from keras.preprocessing.image import ImageDataGenerator
@@ -33,8 +33,10 @@ f1 = f1_score(y_true, y_pred)
 conf_matrix = confusion_matrix(y_true, y_pred)
 
 print("Accuracy:", accuracy)
-print("Precision:", precision)
-print("Recall:", recall)
-print("F1-score:", f1)
+# Calculate the squared error
+squared_error = mean_squared_error(y_true, y_pred)
+
+rmse = np.sqrt(squared_error)
+print("RMSE:", rmse)
 print("Confusion Matrix:")
 print(conf_matrix)
