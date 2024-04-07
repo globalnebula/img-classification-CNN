@@ -3,7 +3,7 @@ from keras.preprocessing import image
 import numpy as np
 
 # Loading the trained model
-model = tf.keras.models.load_model("food_classifier_model.h5")
+model = tf.keras.models.load_model("food_classifier_model1.h5")
 
 # Function to preprocess an image before feeding it to the model
 def preprocess_image(image_path):
@@ -21,6 +21,6 @@ def predict_image(image_path):
     else:
         return "Healthy Food"
 
-image_path_to_predict = "C:\\Users\\kunal\\Desktop\\My Projects\\Image Classifier using CNN\\test.jpg"
+image_path_to_predict = "C:\\Users\\kunal\\Desktop\\My Projects\\Image Classifier using CNN\\test.jpeg"
 prediction_result = predict_image(image_path_to_predict)
 print(f"The predicted class for the given image is: {prediction_result}")

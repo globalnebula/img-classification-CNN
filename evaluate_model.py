@@ -18,7 +18,7 @@ test_data_generator = test_datagen.flow_from_directory(
     class_mode='binary'
 )
 
-model = load_model("food_classifier_model.h5")
+model = load_model("food_classifier_model1.h5")
 
 y_pred = (model.predict(test_data_generator) > 0.5).astype("int32")
 
